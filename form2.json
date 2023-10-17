@@ -47,6 +47,92 @@
     "title": "Obstestric History",
     "fields": [
       {
+        "key": "id1",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "id1",
+        "type": "edit_text",
+        "allowed_chars": "0123456789",
+        "edit_type": "number",
+        "hint": "Total number of Pregnancies",
+        "v_required": {
+          "value": true,
+          "err": "Please select an answer"
+        }
+      },
+      {
+        "key": "id2",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "id1",
+        "type": "edit_text",
+        "allowed_chars": "0123456789",
+        "edit_type": "number",
+        "hint": "Number of Miscarriages",
+        "v_required": {
+          "value": true,
+          "err": "Please select an answer"
+        }
+      },
+      {
+        "key": "id3",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "id1",
+        "type": "edit_text",
+        "allowed_chars": "0123456789",
+        "edit_type": "number",
+        "hint": "Number of still Births",
+        "v_required": {
+          "value": true,
+          "err": "Please select an answer"
+        }
+      },
+      {
+        "key": "id4",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "id1",
+        "type": "edit_text",
+        "allowed_chars": "0123456789",
+        "edit_type": "number",
+        "hint": "Number of Live Births",
+        "v_required": {
+          "value": true,
+          "err": "Please select an answer"
+        }
+      },
+      {
+        "key": "id5",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "id1",
+        "type": "edit_text",
+        "allowed_chars": "0123456789",
+        "edit_type": "number",
+        "hint": "Number of children Alive",
+        "v_required": {
+          "value": true,
+          "err": "Please select an answer"
+        }
+      },
+      {
+        "key": "date",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "1543AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "openmrs_data_type": "text",
+        "type": "date_picker",
+        "hint": "Date of Last Delivery",
+        "expanded": false,
+        "min_date": "today-80y",
+        "max_date": "today",
+        "v_required": {
+          "value": "true",
+          "err": "Enter date"
+        }
+      },
+      {
         "key": "tested_hiv",
         "openmrs_entity_parent": "",
         "openmrs_entity": "concept",
