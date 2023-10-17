@@ -1,0 +1,7 @@
+---
+name: step1_self_test_kits_offered
+description: if self_test_kits_offered
+priority: 1
+condition: "step1_actual_age >= 18"
+actions:
+  - "isRelevant = true "

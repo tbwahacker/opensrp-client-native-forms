@@ -1,0 +1,145 @@
+{
+  "validate_on_submit": true,
+  "count": "1",
+  "encounter_type": "VMMC Physical Examination",
+  "entity_id": "",
+  "metadata": {
+    "start": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "start",
+      "openmrs_entity_id": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "end": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "end",
+      "openmrs_entity_id": "163138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "deviceid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "deviceid",
+      "openmrs_entity_id": "163149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "subscriberid": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "subscriberid",
+      "openmrs_entity_id": "163150AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "simserial": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "simserial",
+      "openmrs_entity_id": "163151AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "phonenumber": {
+      "openmrs_entity_parent": "",
+      "openmrs_entity": "concept",
+      "openmrs_data_type": "phonenumber",
+      "openmrs_entity_id": "163152AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    "encounter_location": ""
+  },
+  "global": {},
+  "step1": {
+    "title": "Physical Examination",
+    "fields": [
+      {
+        "key": "physical_abnormality",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "physical_abnormality",
+        "type": "check_box",
+        "label": "Any significant physical abnormality on general examination? (Check all applicable)",
+        "text_color": "#000000",
+        "combine_checkbox_option_values": "true",
+        "exclusive": [
+          "none"
+        ],
+        "options": [
+          {
+            "key": "pallor",
+            "text": "Pallor",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "pallor"
+          },
+          {
+            "key": "jaundice",
+            "text": "Jaundice",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "jaundice"
+          },
+          {
+            "key": "petechiae_ecchymosis_epistaxis",
+            "text": "Petechiae/Ecchymosis/Epistaxis",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "petechiae_ecchymosis_epistaxis"
+          },
+          {
+            "key": "joint_deformity",
+            "text": "Joint deformity ",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "joint_deformity"
+          },
+          {
+            "key": "others",
+            "text": "Others (specify)",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "others"
+          },
+          {
+            "key": "none",
+            "text": "None",
+            "openmrs_entity": "concept",
+            "openmrs_entity_id": "none"
+          }
+        ]
+      },
+      {
+        "key": "client_weight",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "client_weight",
+        "type": "edit_text",
+        "hint": "Client’s Weight (KG)",
+        "edit_type": "number"
+      },
+      {
+        "key": "client_height",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "client_height",
+        "type": "edit_text",
+        "hint": "Client’s Height (cm)",
+        "edit_type": "number"
+      },
+      {
+        "key": "bmi",
+        "type": "edit_text",
+        "hint": "Body Mass Index (BMI)",
+        "read_only": "true",
+        "openmrs_entity": "concept",
+        "openmrs_entity_id": "bmi",
+        "openmrs_entity_parent": "",
+        "v_numeric": {
+          "value": "true",
+          "err": "Please enter the height"
+        }
+      },
+      {
+        "key": "pulse_rate",
+        "type": "edit_text",
+        "hint": "Pulse Rate (Beats per minute)",
+        "openmrs_entity_id": "pulse_rate",
+        "openmrs_entity_parent": "",
+        "openmrs_entity": "concept",
+        "v_numeric": {
+          "value": "true",
+          "err": "Please enter the pulse rate"
+        }
+      }
+    ]
+  }
+}
